@@ -36,7 +36,7 @@ Foursquare API
 
 ## Methods
 k-means   
-elbow, silhouette width
+elbow, silhouette width   
 DBSCAN
 
 ## Results
