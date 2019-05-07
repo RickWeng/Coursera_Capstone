@@ -23,13 +23,18 @@ Around the globe, the only major cities outside Asia {* with more than 1.2 milli
 Postal code   
 
 Geocoding   
+shapefile to geojson
+centroid 
 
 [Census data](https://data.vancouver.ca/datacatalogue/censusLocalAreaProfiles2016.htm)    
+Calculate population density    
 Mother tongue for the total population excluding institutional residents - 100% data    
 Language spoken most often at home for the total population excluding institutional residents - 100% data   
 Selected places of birth for the immigrant population in private households - 25% sample data   
 
 Foursquare API
+Location of venues    
+heatmap   
 
 
 
