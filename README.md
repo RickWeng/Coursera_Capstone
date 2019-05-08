@@ -24,10 +24,11 @@ Postal code
 
 Geocoding   
 shapefile to geojson
-[https://data.vancouver.ca/datacatalogue/localareaboundary.htm]
+(https://data.vancouver.ca/datacatalogue/localareaboundary.htm)
 centroid 
 
 [Census data](https://data.vancouver.ca/datacatalogue/censusLocalAreaProfiles2016.htm)    
+
 Calculate population density    
 Mother tongue for the total population excluding institutional residents - 100% data    
 Language spoken most often at home for the total population excluding institutional residents - 100% data   
