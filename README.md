@@ -19,6 +19,8 @@ These cultural analysts foresee an accelerating rise of Asian-oriented restauran
 Forty-three per cent of Metro Vancouver residents have an Asian heritage, which is a much higher proportion than any other major city outside the continent of Asia.
 Based on Statistics Canada reports, the number of those with Asian roots in Metro Vancouver will continue to grow at a faster rate than the non-Asian population.
 Around the globe, the only major cities outside Asia {* with more than 1.2 million residents} that come close to Metro Vancouver for their portion of residents with Asian backgrounds are San Francisco (33 per cent Asian), London, England (21 per cent), Metro Toronto (35 per cent), Calgary (23 per cent) and Sydney, Australia (19 per cent).
+
+Location
 ## Data
 Postal code   
 
