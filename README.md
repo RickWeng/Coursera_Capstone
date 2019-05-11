@@ -11,6 +11,8 @@ Methodology section which represents the main component of the report where you 
 Results section where you discuss the results.    
 Discussion section where you discuss any observations you noted and any recommendations you can make based on the results.    
 Conclusion section where you conclude the report.   
+## Abstract
+
 ## Introduction
 Vancouver has one of the highest concentrations of Chinese people outside the continent of Asia. Chinese account for nearly 28% of the population (Statistics Canada, 2011), which leads to emerging Chinese restaurants over the past decade. The number of Chinese population in Vancouver is likely to continue to grow at a faster rate than the non-Chinese population (Statistics Canada, 2016). An accelerating rise of Chinese restaurants can be expected. Now is a good time for investors to open a Chinese restaurant, the real problem is what is the optimal location?  
 Location is important for the success of restaurant because it affects the cost and competition. Locations with high density of population but low density of restaurants in the vicinity are likely to attract more customers. Most restaurant location selection analyses in Vancouver cover rent cost, yet very few address or seriously recognize competition. To address these knowledge gaps, I conduct an assessment of population and restaurant distribution across the City of Vancouver. Local areas are then segmented and clustered accordingly. I assume major customers of Chinese restaurants are Chinese. I pose three questions:
