@@ -20,6 +20,9 @@ Location is important for the success of restaurant because it affects the cost 
 2. How are restaurants distributed in the City of Vancouver?
 3. Which local area in the City of Vancouver should the investor open a Chinese restaurant? 
 ## Method
+Local Area Boundary shape area, 2016 Census of Population number of Chinese population, density of Chinese population  
+Local Area Boundary shape area, centroid, Foursquare API, density of restaurants    
+Density-Based Spatial Clustering of Applications with Noise (DBSCAN), optimal chinese restaurant location   
 ### Data
 **Local Area Boundary**  
 Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city’s 22 local areas (also known as local planning areas). These boundaries generally follow street centrelines. Shape area can be calculated. Centroid as the arithmetic mean position of the polygon were also derived for further analysis.  
@@ -28,11 +31,14 @@ The 2016 Census (Statistics Canada, 2016) provides statistical information about
 **Foursquare API**  
 Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and category information about nearby venues of each local area (Foursquare, 2019). To get the number of restaurants in each local area, I filtered venues by venue categories. The density of restaurants in each local area can then be calculated.  
 ### Cluster Analysis
-Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. DBSCAN was used to segment and cluster local areas in the study.  
+DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. DBSCAN was used to segment and cluster local areas in the study.  
 ## Results
+### Distribution of Chinese Population
+### Distribution of Restaurants
+### Optimal Chinese Restaurant Location
 
 ## Discussion
-
+focus on competition, rent cost, pedestrian volume, distance, Richmond
 ## Conclusion
 
 
