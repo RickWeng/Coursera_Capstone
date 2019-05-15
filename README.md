@@ -20,19 +20,22 @@ Location is important for the success of restaurant because it affects the cost 
 2. How are Chinese restaurants distributed in the City of Vancouver?
 3. Which local area in the City of Vancouver should the investor open a Chinese restaurant? 
 This study is aimed at providing location insights for investors interested in opening a Chinese restaurant in the City of Vancouver.   
-## Method
+ 
+## Data
+**Local Area Boundary**  
+Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city’s 22 local areas (also known as local planning areas). These boundaries generally follow street centrelines. Centroid as the arithmetic mean position of the polygon were derived for searching nearby Chinese restaurants. To get the density of population and restaurants, shape area were calculated.   
+**2016 Census of Population**  
+The 2016 Census (Statistics Canada, 2016) provides statistical information about the population. Visible minority for the population in private households was used to assess the number of Chinese population in each of the city's 22 Local Areas. Visible minorities refer to persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in colour. The visible minority population consists many groups such as Chinese, Black, Latin American and Arab. The density of Chinese population in each local area were calculated.  
+**Foursquare API**  
+Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and detailed information (e.g. venue cateogry) of venues in each local area (Foursquare, 2019). Radius was set to 1500 m to cover most area of each local area. To get the number of Chinese restaurants in each local area, I searched Chinese restaurants (id: 4bf58dd8d48988d145941735) specifically. Chinese restaurants include dim sum restaurants, Shanghai restaurants, Taiwan restaurants, etc. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. 
+## Methodology
+Many restaurants do not have a rating so ratings were not included in the cluster analysis. Ratings were only used to help me better understand each local area. 
 Local Area Boundary shape area, 2016 Census of Population number of Chinese population, density of Chinese population  
 Local Area Boundary shape area, centroid, Foursquare API, density of restaurants    
-Density-Based Spatial Clustering of Applications with Noise (DBSCAN), optimal chinese restaurant location   
-### Data
-**Local Area Boundary**  
-Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city’s 22 local areas (also known as local planning areas). These boundaries generally follow street centrelines. Shape area can be calculated. Centroid as the arithmetic mean position of the polygon were also derived for further analysis.  
-**2016 Census of Population**  
-The 2016 Census (Statistics Canada, 2016) provides statistical information about the population. Visible minority for the population in private households was used to assess the number of Chinese population in each of the city's 22 Local Areas. Visible minorities refer to persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in colour. The visible minority population consists many groups such as Chinese, Black, Latin American and Arab. The density of Chinese population in each local area can be then calculated.  
-**Foursquare API**  
-Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and category information about nearby venues of each local area (Foursquare, 2019). Radius was set to 1500 m to  To get the number of Chinese restaurants in each local area, I searched Chinese restaurants(id) specifically. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. However, ratings in this study were only used to 
+Density-Based Spatial Clustering of Applications with Noise (DBSCAN), optimal chinese restaurant location  
 ### Cluster Analysis
-DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. In the study, Min-Max Normalization which gives the same importance to all variables was applied to data. DBSCAN was then used to segment and cluster local areas.   
+DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. In the study, Min-Max Normalization which gives the same importance to all variables was applied to data. DBSCAN was then used to segment and cluster local areas. To group local areas precisely and have an appropriate number of clusters, 0.2 radius was used and the minimum number of points was set to 2.
+
 ## Results
 ### Distribution of Chinese Population
 
