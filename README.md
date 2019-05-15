@@ -23,12 +23,17 @@ This study is aimed at providing location insights for investors interested in o
  
 ## Data
 **Local Area Boundary**  
-Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city’s 22 local areas (also known as local planning areas). These boundaries generally follow street centerlines. Centroid as the arithmetic mean position of the polygon were derived for searching nearby Chinese restaurants. To get the density of population and restaurants, shape area of each local area was calculated.   
+Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city’s 22 local areas (also known as local planning areas). These boundaries generally follow street centerlines. 
 **2016 Census of Population**  
-The 2016 Census (Statistics Canada, 2016) provides statistical information about the population. Visible minority for the population in private households was used to assess the number of Chinese population in each of the city's 22 Local Areas. Visible minorities refer to persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in color. The visible minority population consists many groups such as Chinese, Black, Latin American and Arab. The density of Chinese population in each local area were calculated.  
+The 2016 Census (Statistics Canada, 2016) provides statistical information about the population. Visible minority for the population in private households was used to assess the number of Chinese population in each of the city's 22 Local Areas. Visible minorities refer to persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in color. The visible minority population consists many groups such as Chinese, Black, Latin American and Arab.
 **Foursquare API**  
-Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and detailed information (e.g. venue category) of venues in each local area (Foursquare, 2019). Radius was set to 1500 m to cover most area of each local area. To get the number of Chinese restaurants in each local area, I searched Chinese restaurants (id: 4bf58dd8d48988d145941735) specifically. Chinese restaurants include dim sum restaurants, Shanghai restaurants, Taiwan restaurants, etc. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. 
+Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can acquire spatial and detailed information (e.g. venue category) of venues in each local area (Foursquare, 2019). Chinese restaurants including dim sum restaurants, Shanghai restaurants, Taiwan restaurants, etc. can be extracted. Foursquare API also allows me to get rating (0-10) for each restaurant, which is helpful to evaulate quality of restaurants in each local area.  
 ## Methodology
+### Exploratory Data Analysis
+Centroid as the arithmetic mean position of the polygon were derived from Local Area Boundary data for searching nearby Chinese restaurants. To get the density of Chinese population, shape area of each local area was calculated. The density of Chinese population in each local area were calculated. Radius was set to 1500 m to cover most area of each local area. To get the number of Chinese restaurants in each local area, I searched Chinese restaurants (id: 4bf58dd8d48988d145941735) specifically. The density of Chinese restaurants in each local area can then be calculated using the equation denisty = number / (pai * radius^2).
+Chinese restaurants map (neighborhood change to local area in legend)  
+Histogram of rating (add density curve and border)  
+
 There are There is no Chinese restaurants can be found within 1500 m distance from the centroid of West Point Grey . Missing rating in West Point Grey is thus bec restaurants while 
 3... of 7... restaurants do not have a rating so ratings were not included in the cluster analysis. Ratings were only used to help me understand each local area. 
 ### Cluster Analysis
@@ -40,7 +45,7 @@ DBSCAN is a popular unsupervised clustering algorithm that is commonly used in m
 ### Distribution of Chinese Restaurants
 
 ### Optimal Chinese Restaurant Location
-Other than that, ... are also good choices
+Other than Victoria-Fraserview, ... are also good choices
 ## Discussion
 focus on competition, rent cost, pedestrian volume, distance, Richmond
 ## Conclusion
