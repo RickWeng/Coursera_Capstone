@@ -19,6 +19,7 @@ Location is important for the success of restaurant because it affects the cost 
 1. How is Chinese population distributed in the City of Vancouver?
 2. How are restaurants distributed in the City of Vancouver?
 3. Which local area in the City of Vancouver should the investor open a Chinese restaurant? 
+This analysis is aimed at providing location insights for investors interested in opening a Chinese restaurant in the City of Vancouver.    
 ## Method
 Local Area Boundary shape area, 2016 Census of Population number of Chinese population, density of Chinese population  
 Local Area Boundary shape area, centroid, Foursquare API, density of restaurants    
