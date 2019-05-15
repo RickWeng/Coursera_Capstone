@@ -36,7 +36,7 @@ DBSCAN is a popular unsupervised clustering algorithm that is commonly used in m
 ## Results
 ### Distribution of Chinese Population
 
-### Distribution of Restaurants
+### Distribution of Chinese Restaurants
 
 ### Optimal Chinese Restaurant Location
 Other than that, ... are also good choices
