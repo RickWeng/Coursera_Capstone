@@ -30,14 +30,16 @@ Local Area Boundary (City of Vancouver, 2019) contains the polygons for the city
 **2016 Census of Population**  
 The 2016 Census (Statistics Canada, 2016) provides statistical information about the population. Visible minority for the population in private households was used to assess the number of Chinese population in each of the city's 22 Local Areas. Visible minorities refer to persons, other than Aboriginal peoples, who are non-Caucasian in race or non-white in colour. The visible minority population consists many groups such as Chinese, Black, Latin American and Arab. The density of Chinese population in each local area can be then calculated.  
 **Foursquare API**  
-Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and category information about nearby venues of each local area (Foursquare, 2019). To get the number of Chinese restaurants in each local area, I searched Chinese restaurants(id) specifically. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. However, ratings in this study were only used to 
+Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and category information about nearby venues of each local area (Foursquare, 2019). Radius was set to 1500 m to  To get the number of Chinese restaurants in each local area, I searched Chinese restaurants(id) specifically. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. However, ratings in this study were only used to 
 ### Cluster Analysis
-DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. DBSCAN was used to segment and cluster local areas in the study.  
+DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. In the study, Min-Max Normalization which gives the same importance to all variables was applied to data. DBSCAN was then used to segment and cluster local areas.   
 ## Results
 ### Distribution of Chinese Population
-### Distribution of Restaurants
-### Optimal Chinese Restaurant Location
 
+### Distribution of Restaurants
+
+### Optimal Chinese Restaurant Location
+Other than that, ... are also good choices
 ## Discussion
 focus on competition, rent cost, pedestrian volume, distance, Richmond
 ## Conclusion
