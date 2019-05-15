@@ -29,10 +29,8 @@ The 2016 Census (Statistics Canada, 2016) provides statistical information about
 **Foursquare API**  
 Foursquare builds a massive dataset of location data. Using Foursquare API and centroid coordinates, I can extract spatial and detailed information (e.g. venue category) of venues in each local area (Foursquare, 2019). Radius was set to 1500 m to cover most area of each local area. To get the number of Chinese restaurants in each local area, I searched Chinese restaurants (id: 4bf58dd8d48988d145941735) specifically. Chinese restaurants include dim sum restaurants, Shanghai restaurants, Taiwan restaurants, etc. The density of Chinese restaurants in each local area can then be calculated. Foursquare API also allows me to extract rating (0-10) for each restaurant. 
 ## Methodology
-Many restaurants do not have a rating so ratings were not included in the cluster analysis. Ratings were only used to help me better understand each local area. 
-Local Area Boundary shape area, 2016 Census of Population number of Chinese population, density of Chinese population  
-Local Area Boundary shape area, centroid, Foursquare API, density of restaurants    
-Density-Based Spatial Clustering of Applications with Noise (DBSCAN), optimal chinese restaurant location  
+There are There is no Chinese restaurants can be found within 1500 m distance from the centroid of West Point Grey . Missing rating in West Point Grey is thus bec restaurants while 
+3... of 7... restaurants do not have a rating so ratings were not included in the cluster analysis. Ratings were only used to help me understand each local area. 
 ### Cluster Analysis
 DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. In the study, Min-Max Normalization which gives the same importance to all variables was applied to data. DBSCAN was then used to segment and cluster local areas. To group local areas precisely and have an appropriate number of clusters, 0.2 radius was used and the minimum number of points was set to 2.
 
