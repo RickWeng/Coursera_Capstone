@@ -47,6 +47,7 @@ DBSCAN is a popular unsupervised clustering algorithm that is commonly used in m
 ### Optimal Chinese Restaurant Location
 Other than Victoria-Fraserview, ... are also good choices
 ## Discussion
+It should be noted that the study focused on competition, or more precisely on density of population and restaurants, ignoring the . This focus gave us more space to explore the . The approach and analysis is conducted for the Vancouver case but this multicriteria decision-making approach has broader applicability. Four alternatives for restaurant location in Vancouver are evaluated. The aspects include transportation, commercial area, economic, competition and environment. The criteria are rent cost, transportation cost, convenience to mass transportation system, size of parking space, pedestrian volume, number of competitors, the intensity of competition, size of the commercial area where the restaurant is located, extent of public facilities, convenience of garbage disposal, and sewage capacity. 
 focus on competition, rent cost, pedestrian volume, distance, Richmond
 ## Conclusion
 
