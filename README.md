@@ -39,12 +39,16 @@ There are There is no Chinese restaurants can be found within 1500 m distance fr
 ### Cluster Analysis
 DBSCAN is a popular unsupervised clustering algorithm that is commonly used in machine learning (Ester et al., 1996). DBSCAN groups similar points that are close to each other based on a radius and a minimum number of points. Unlike K-means, DBSCAN can identify clusters of arbitrary shape and find outliers without specifying the number of clusters before the clustering process. In the study, Min-Max Normalization which gives the same importance to all variables was applied to data. DBSCAN was then used to segment and cluster local areas. To group local areas precisely and have an appropriate number of clusters, 0.2 radius was used and the minimum number of points was set to 2.
 
+![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/rating-hist.png)
 ## Results
 ### Distribution of Chinese Population
-
+![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/density-cp.png)
 ### Distribution of Chinese Restaurants
-
+![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/density-cr.png)
 ### Optimal Chinese Restaurant Location
+![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/dbscan-scatter.png)
+![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/cluster-boxplot.png)
+
 Other than Victoria-Fraserview, ... are also good choices
 ## Discussion
 It should be noted that the study focused on competition, or more precisely on density of population and restaurants, ignoring the . This focus gave us more space to explore the . The approach and analysis is conducted for the Vancouver case but this multicriteria decision-making approach has broader applicability. Four alternatives for restaurant location in Vancouver are evaluated. The aspects include transportation, commercial area, economic, competition and environment. The criteria are rent cost, transportation cost, convenience to mass transportation system, size of parking space, pedestrian volume, number of competitors, the intensity of competition, size of the commercial area where the restaurant is located, extent of public facilities, convenience of garbage disposal, and sewage capacity. 
