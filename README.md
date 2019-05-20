@@ -1,5 +1,5 @@
 # Optimal Chinese Restaurant Location  
-[Jupyter notebook]()
+To view the code, please click [Jupyter notebook](https://nbviewer.jupyter.org/github/RickWeng/optimal-restaurant-location/blob/master/optimal-restaurant-location.ipynb).
 ## Abstract
 * Investors have a promising future in investment of Chinese restaurant at the City of Vancouver
 * Location, census data, Foursquare API and machine learning were used to assess the optimal restaurant location
