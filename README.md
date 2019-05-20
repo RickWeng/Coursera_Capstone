@@ -40,7 +40,7 @@ Chinese population was concentrated near the East side of the City of Vancouver 
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/cp-dist.png)
 Figure 5. Distribution of Chinese population.  
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/density-cp.png)
-Figure 5. Density of Chinese population (#/km^2) in each local area.  
+Figure 6. Density of Chinese population (#/km^2) in each local area.  
 ### Distribution of Chinese Restaurants
 North-central part of the City of Vancouver was the hotspot of Chinese restaurants (Fig. 7). West End (7.1 per km^2), Downtown (7.1 per km^2), and Fairview (6.9 per km^2) were the top 3 local areas with the highest density of Chinese restaurants (Fig. 8).  
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/cr-heatmap.png)
@@ -52,13 +52,13 @@ DBSCAN clustering identified 4 clusters and 2 outliers (Renfrew-Collingwood and 
 By contrast, Fairview and West End grouped together because of their very high density of Chinese restaurants and low density of Chinese population. Marpole, Arbutus-Ridge, Hastings-Sunrise, Killarney, and Oakridge formed a cluster with relatively high density of Chinese restaurants but relatively low density of Chinese restaurants.  
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/dbscan-scatter.png)
 Figure 9. Clusters of normalized Chinese population and restaurants.  
-In terms of available ratings, Victoria-Fraserview ranked first in the median value and second in the mean value.  
+In terms of available ratings, Victoria-Fraserview ranked first in the median value and second in the mean value (Fig. 10).  
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/cluster-boxplot.png)
 Figure 10. Ratings of Chinese restaurants in each local area. Plus signs represent mean values; center lines represent median values.  
 ## Discussion
 ![](https://github.com/RickWeng/optimal-restaurant-location/blob/master/figures/optimal-location.png)
 Figure 11. Optimal Chinese restaurant location.  
-Based on the density of Chinese population and restaurants, I recommended Victoria-Fraserview to be an optimal location for investors to open a Chinese Restaurant in the City of Vancouver. However, the high quality of food and service is needed for the restaurant to stand out from all the rest since nearby Chinese restaurants generally have a high rating. Other than Victoria-Fraserview, Oakridge might be another good choice.  
+Based on the density of Chinese population and restaurants, I recommended Victoria-Fraserview to be an optimal location for investors to open a Chinese Restaurant in the City of Vancouver (Fig. 11). However, the high quality of food and service is needed for the restaurant to stand out from all the rest since nearby Chinese restaurants generally have a high rating. Other than Victoria-Fraserview, Oakridge might be another good choice.  
 It should be noted that the study focused on density of population and restaurants, ignoring the rent cost. This focus gave me more space to evaluate the competition in each local area. The approach and analysis was conducted for the City of Vancouver case but can have broader applicability. Although it was beyond the scope of this study, many other factors including transportation (cost and convenience), rent cost and size of parking space can affect the location selection (Tzeng et al., 2002). Residential census data used in the study was criticized for imposing a bias upon the estimation of pedestrian volume. Future study should incorporate these factors into the analysis.  
 ## Conclusion
 Vancouver is one of the best places in North America to open a Chinese restaurant. Using location, census data, Foursquare API and DBSCAN clustering algorithm, I assessed the competition level of each local area. High density of Chinese population and low density of Chinese restaurants makes Victoria-Fraserview an optimal location to start the business. I recommended investors to select Victoria-Fraserview local area as their restaurant location because of the low competition level. Future study should incorporate other factors such as rent cost, transportation, size of parking space and pedestrian volume into the location selection analysis.  
