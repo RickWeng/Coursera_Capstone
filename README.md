@@ -1,4 +1,5 @@
 # Optimal Chinese Restaurant Location  
+[Jupyter notebook]()
 ## Abstract
 * Investors have a promising future in investment of Chinese restaurant at the City of Vancouver
 * Location, census data, Foursquare API and machine learning were used to assess the optimal restaurant location
